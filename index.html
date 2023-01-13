@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHJOO_LOVE</title>
+    <script>
+        function bingClick()
+        {
+            var element = document.getElementById("nn").value;
+            var doing="https://cn.bing.com/search?q="+element+"&qs=n&form=QBRE&sp=-1&pq="+element+"&sc=0-8&sk=&cvid=05FE3C479C5E4007B9CD8C8BE8F8769C&ghsh=0&ghacc=0&ghpl=";
+            window.location.href=doing;
+        }
+        function baiduClick()
+        {
+            var element = document.getElementById("nn").value;
+            var doing="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd="+element+"&fenlei=256&rsv_pq=0x81ef93350007ef4f&rsv_t=8734puGoya6rRdU24J4gYt7W0Ivm7G5z%2FcHcPwlHmpnxxBPskDML92cFs8pr&rqlang=en&rsv_enter=1&rsv_dl=tb&rsv_sug3=6&rsv_sug1=6&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&prefixsug=%25E5%258E%259F%25E7%2590%2586&rsp=4&inputT=1458&rsv_sug4=1458";
+            window.location.href=doing;
+        }
+    </script>
+</head>
+<body>
+    <div class="loveHead">
+        <input type="text"  id="nn">
+        <input type="button" value="必应" onclick="bingClick()">
+        <input type="button" value="百度" onclick="baiduClick()">
+    </div>
+</body>
+</html>
