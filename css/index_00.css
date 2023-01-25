@@ -127,7 +127,7 @@ a
 }
 .ChjText .T1
 {
-    font-size: 70px;
+    font-size: 68px;
     font-weight: bolder;
     position: relative;
     bottom: 60px;
@@ -186,7 +186,7 @@ a
     top: 120px; */
     width: 1700px;
     margin: auto auto;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .JinGaoText
 {
@@ -288,10 +288,10 @@ a
 .ChjFooter
 {
     position: relative;
-    width: 90%;
-    height: 35px;
+    width: 95%;
+    /* height: 35px; */
     margin: auto auto;
-    top: 400px;
+    top: 500px;
     /* background: #999; */
     padding-bottom: 30px;
 }
@@ -300,3 +300,28 @@ a
     position: relative;
     font-size: 25px;
 } */
+.ChjTechImg
+{
+    width: 50%;
+    /* float: right; */
+    position: relative;
+    /* bottom: 2%; */
+    margin-right: 5%;
+}
+.ChjTechText
+{
+    width: 40%;
+    float: right;
+    position: relative;
+    /* bottom: 2%; */
+    margin-left: 5%;
+    top: 50px;
+    /* height: 1000px; */
+    /* background: #000; */
+}
+.ChjTech
+{
+    position: relative;
+    width: 95%;
+    margin: 400px auto auto auto;
+}
