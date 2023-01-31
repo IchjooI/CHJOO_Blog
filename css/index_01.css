@@ -1,0 +1,86 @@
+.contactImg
+{
+    width: 1800px;
+    margin: auto auto;
+    /* background: #000; */
+}
+.contactImg .wecham
+{
+    float: right;
+    position: relative;
+    right: 150px;
+}
+.contactImg .qq
+{
+    position: relative;
+    left: 150px;
+}
+.contactImg .name
+{
+    position: relative;
+    left: 200px;
+    bottom: 67px;
+}
+.contactImg .ladderL
+{
+    position: relative;
+    right: 700px;
+    top: 155px;
+}
+.contactImg .ladderR
+{
+    position: relative;
+    left: 370px;
+    top: 155px;
+}
+.contactImg .website
+{
+    position: relative;
+    left: 150px;
+    top:150px
+}
+.contactImg .mail
+{
+    position: relative;
+    float: right;
+    right: 150px;
+    top: 150px;
+}
+.contactImg2 .liftL
+{
+    float: left;
+    position: relative;
+    top: 145px;
+    left: 50px;
+}
+.contactImg2 .liftR
+{
+    float:right;
+    position: relative;
+    /* top: 1000px; */
+    top: 145px;
+    right: 50px;
+}
+.contactImg2
+{
+    position: relative;
+    width: 1800px;
+    margin: auto auto;
+}
+.contactText
+{
+    width: 1800px;
+}
+.contactText p
+{
+    position: relative;
+    font-size: 40px;
+    font-family: ITC00;
+    text-align: center;
+    bottom: 200px;
+}
+.contactClass
+{
+    position: relative;
+    top: 150px;
+}
