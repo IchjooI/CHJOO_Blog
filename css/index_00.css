@@ -295,7 +295,7 @@ a
     width: 95%;
     /* height: 35px; */
     margin: auto auto;
-    top: 500px;
+    top: 450px;
     /* background: #999; */
     padding-bottom: 30px;
 }
@@ -348,4 +348,5 @@ a
     margin-top:15%;
     margin-right: 10%;
     font-weight:bolder;
+    font-family: ITC00;
 }
