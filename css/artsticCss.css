@@ -1,0 +1,146 @@
+.atrsticName
+{
+    font-size:105px;
+    width: 1200px;
+    height:400px;
+    /* background: #222; */
+    margin: auto auto;
+    text-align: center;
+    /* padding-top: 10p; */
+    font-family: IV00;
+    color: #e1be60;
+    /* border: 15px solid #222 ; */
+    /* border: 10px solid #222 ; */
+    /* opacity:0.9; */
+    margin-top: 100px;
+    text-shadow: 5px 5px 0px #222;
+    margin-bottom: 300px;
+    -webkit-text-stroke:3px #222;
+}
+.atrsticName a div
+{
+    color: #222;
+    /* height: 100px; */
+    width: 700px;
+    margin: auto auto;
+    background: #e1be60;
+    border-radius: 30px;
+    text-shadow: 0px 0px 0px #222;
+    box-shadow: 20px 20px 5px #222;
+    border: 5px solid #222;
+    -webkit-text-stroke:0px #222;
+}
+#imgName
+{
+    /* background:red; */
+    width: 1300px;
+    margin: auto auto;
+}
+.imgR
+{
+    width: 600px;
+    margin-top: 200px;
+    border: 7px solid #222;
+    position: relative;
+    left: 690px;
+}
+.imgL
+{
+    width: 600px;
+    margin-top: 100px;
+    border: 7px solid #222;
+    position: relative;
+}
+.imgBoxL .TextImg
+{
+position: relative;
+width: 600px;
+left: 690px;
+top: 400px;
+text-align: right;
+}
+.imgBoxR .TextImg
+{
+position: relative;
+width: 600px;
+/* left: 890px;*/
+top: 550px; 
+/* bottom: 500px; */
+text-align: left;
+}
+.TextImg
+{
+    font-size: 70px;
+    font-family: IV00;
+}
+.TextImg button
+{
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    font-family: IV00;
+    background: #e1be60;
+    border-radius: 30px;
+    border: #222 solid 4px;
+    margin: auto auto;
+}
+.MyArtstic
+{
+    width: 1500px;
+    height: 600px;
+    /* background: #000; */
+    margin: auto auto;
+    position: relative;
+    /* top: 150px; */
+    /* bottom: 300px; */
+}
+.MyArtstic .MyTextR
+{
+    width: 500px;
+    height: 500px;
+    background: #e1be60;
+    position: relative;
+    float: right;
+}
+.MyArtstic .MyTextL
+{
+    width: 500px;
+    height: 500px;
+    background-color: #e1be60;
+    position: relative;
+    bottom: 500px;
+}
+.MyArtstic .MyLogo
+{
+    width: 400px;
+    height: 500px;
+    /* background: #444; */
+    /* float: left; */
+    margin: auto auto;
+}
+.MyTextL 
+{
+    font-size: 40px;
+    font-family: IV00;
+    text-align: center;
+    border: 10px solid #222;
+}
+.MyTextR
+{
+    font-size: 40px;
+    font-family: IV00;
+    text-align: center;
+    border: 10px solid #222;
+}
+.MyArtstic .hand
+{
+    font-size: 100px;
+    width: 1000px;
+    height: 100px;
+    /* background-color: #aaa; */
+    margin-top: 300px;
+    margin: auto auto;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: IV00;
+}

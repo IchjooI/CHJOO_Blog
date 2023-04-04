@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loveIndex.css" type="text/css">
+    <title>Arbutus</title>
+    <style>
+        *
+        {
+            margin: 0;padding: 0;
+        }
+    </style>
+    <script>
+        // h=window.innerHeight;
+        // // dom=document.getElementById("test");
+        // // dom.style.height="100px";
+        // // dom.style.width="200px"
+        // // dom.style.backgroundColor="blue";
+        //     dom=document.getElementById("test")
+        //     dom.style.color="blue";
+        //     dom.style.fontSize="300px";
+        // function a()
+        // {
+        //     console.log("高度为：",window.innerHeight);
+        //     console.log("宽度为：",window.innerWidth);
+        //     dom=document.getElementById("test")
+        //     dom.style.color="blue";
+        //     dom.style.fontSize="300px";
+        // }
+    </script>
+</head>
+<body>
+    <div id="test"></div>
+    <div id="test2"></div>
+    <script>
+        h=window.innerHeight/2
+        console.log(h)
+        dom=document.getElementById("test");
+        dom.style.height=h+"px";
+        dom.style.width="200px"
+        dom.style.backgroundColor="#fff";
+        dom.style.width="100%"
+        
+        dom2=document.getElementById("test2");
+        dom2.style.height=h+"px"
+        // dom2.style.marginTop=h+"px"
+        dom2.style.width="200px"
+        dom2.style.backgroundColor="#000";
+        dom2.style.width="auto"
+        window.addEventListener('resize', function() {
+            h=window.innerHeight/2
+            console.log(h)
+            dom=document.getElementById("test");
+            dom.style.height=h+"px";
+            dom.style.width="200px"
+            dom.style.backgroundColor="#fff";
+            dom.style.width="auto"
+            dom2=document.getElementById("test2");
+            dom2.style.height=h+"px"
+            // dom2.style.marginTop=h+"px"
+            dom2.style.width="200px"
+            dom2.style.backgroundColor="#000";
+            dom2.style.width="auto"
+        })
+    </script>
+    <!-- <h1>Arbutus&Love</h1>
+    <button onclick="a()">1</button> -->
+</body>
+</html>

@@ -10,8 +10,12 @@
     <meta name="author" content="chjoo">
     <link rel="stylesheet" href="css/index_00.css" type="text/css">
     <link rel="stylesheet" href="css/index_01.css" type="text/css">
+    <link rel="stylesheet" href="css/artsticCss.css" type="text/css">
+    <link rel="stylesheet" href="css/ttf.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/artsticCss.css" type="test/css"> -->
     <link rel="shortcut icon" href="img/logo00.ico">
     <script src="js/magical.js"></script>
+    <script src="https://unpkg.com/xlsx@0.15.6/dist/xlsx.full.min.js"></script>
     <title>CHJOO</title>
 </head>
 <body>
@@ -31,12 +35,82 @@
             </ul>
         </div>
     </div>
-
-    <div class="ChjNo">
-        <div class="ChjNoText"> 
-            The website is being built...
-        </div>
-        <img src="img/JinGao.png" alt="JinGao" >
+    <div class="atrsticName">
+        <p>
+            WELCOME TO CHJOO'S WHISMY
+        </p>
+        <a href="#MyArtstic"><div>LET'S GO</div></a>
     </div>
+    <div class="MyArtstic">
+        <div class="hand">
+            Lnbound Notification
+        </div>
+        <div class="MyTextR">
+            <p>
+            If you need to obtain relevant images, please contact the author and indicate the source. The designer's workforce deserves respect
+            </p>
+        </div>
+        <div class="MyLogo">
+            <img src="img/JinGao.png" alt="" style="width: 400px; position: relative; top: 50px;">
+        </div>
+        <div class="MyTextL">
+            <p>
+                CHJOO is a free art participant. He likes color and prefers beautiful things. If you are like him, let's start with him towards beautiful things
+            </p>
+        </div>
+    </div>
+    <div id="imgName">
+        <br>
+    </div>
+    <script>
+
+        // 创建 XMLHttpRequest 对象
+        var xhr = new XMLHttpRequest();
+        // 打开一个 GET 请求，请求的 URL 为 "path/to/file.xlsx"
+        xhr.open("GET", "xlsx/images.xlsx", true);
+        // 设置 responseType 为 "arraybuffer"
+        xhr.responseType = "arraybuffer";
+        // 当请求完成时执行的回调函数
+        xhr.onload = function(e) {
+            // 将 response 转换为 Uint8Array
+            var data = new Uint8Array(xhr.response);
+            // 读取 XLSX 文件内容
+            var workbook = XLSX.read(data, { type: "array" });
+            // 获取工作簿中的第一个工作表
+            var firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+            // 将工作表转换为 JSON 格式
+            var data = XLSX.utils.sheet_to_json(firstSheet);
+            // 在控制台输出 JSON 数据
+            // console.log(data);
+
+            var a=document.getElementById("imgName")
+            var tr = document.createElement('tr');
+                a.appendChild(tr); //创建行
+            for(i=data.length-1;i>=0;i--)
+                {
+                    var tr = document.createElement('tr');
+                        a.appendChild(tr); //创建行
+                    var td = document.createElement('td');
+                    var data1="https://www.xiaohongshu.com/user/profile/5d332a82000000001100cbf3/"+data[i].site;
+                    console.log(data1)
+                    
+                        if(i%2==0)
+                        {
+                            td.innerHTML = '<div class="imgBoxL"><div class="TextImg">"'+data[i].name+'"<br><a href="'+data1+'"><button>DETAILS</button></a></div><img src="'+data[i].image+'" alt="" class="imgL"></div>';
+                        }
+                        else
+                        {
+                            td.innerHTML = '<div class="imgBoxR"><div class="TextImg">"'+data[i].name+'"<br><a href="'+data1+'"><button>DETAILS</button></a></div><img src="'+data[i].image+'" alt="" class="imgR"></div>';
+                        }
+                        tr.innerHTML='<hr>';
+                        console.log(typeof data[i].name);
+                        console.log(data[i].name);
+                        tr.appendChild(td); //创建列
+                }
+        }
+        // 发送请求
+        xhr.send();
+
+    </script>
 </body>
 </html>

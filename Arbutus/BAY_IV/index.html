@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/ttf.css" type="text/css">
+    <title>Document</title>
+    
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="img">
+            <img src="../../img/logo01.png" alt="logo">
+        </div>
+        <div class="text">
+            BAYBERRY<span>IV</span><span>th</span>
+        </div>
+        
+    </div>
+    <script>
+        h=window.innerHeight
+        w=window.innerWidth
+        mainHeight=h/2
+        mainWidth=w*0.9
+        mainMargin=h*0.25 +"px auto"
+        console.log(h)
+        // domImg=document.getElementsByClassName("img")
+        // domImg.style.height=mainHeight;
+        dom=document.getElementById("main");
+        dom.style.height=mainHeight+"px";
+        dom.style.width=mainWidth+"px"
+        dom.style.backgroundColor="#000";
+        dom.style.margin=mainMargin;
+
+        dom.style.color="#999"
+        dom.style.fontSize=150+"px";
+
+        window.addEventListener('resize', function() {
+            h=window.innerHeight
+            w=window.innerWidth
+            mainHeight=h/2
+            mainWidth=w*0.9
+            mainMargin=h*0.25 +"px auto"
+            console.log(h)
+            dom=document.getElementById("main");
+            dom.style.height=mainHeight+"px";
+            dom.style.width=mainWidth+"px"
+            dom.style.backgroundColor="#000";
+            dom.style.margin=mainMargin;
+        })
+    </script>
+
+</body>
+</html>

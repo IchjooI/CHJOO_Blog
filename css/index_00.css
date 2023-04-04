@@ -1,10 +1,8 @@
-@font-face {
-    font-family:ITC00;
-    src:url("../tff/ITC_00.TTF");
-}
+
 body
 {
     background: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a
 {
@@ -60,13 +58,13 @@ a
     z-index: 1;
     transition: all 0.5s linear;
     margin: auto auto;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .ChjOptions
 {
     width: 50%;
     height: 100px;
-    font-size:30px;
+    font-size:35px;
     text-align: center;
     margin: auto;
     /* position:absolute; */

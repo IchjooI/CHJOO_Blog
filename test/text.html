@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/xlsx@0.15.6/dist/xlsx.full.min.js"></script>
+    <script src="../js/xlsx.js"></script>
+  </head>
+  <body>
+    <div id="add">
+
+    </div>
+    <script>
+        // 创建 XMLHttpRequest 对象
+        var xhr = new XMLHttpRequest();
+        // 打开一个 GET 请求，请求的 URL 为 "path/to/file.xlsx"
+        xhr.open("GET", "../xlsx/images.xlsx", true);
+        // 设置 responseType 为 "arraybuffer"
+        xhr.responseType = "arraybuffer";
+        // 当请求完成时执行的回调函数
+        xhr.onload = function(e) {
+        // 将 response 转换为 Uint8Array
+        var data = new Uint8Array(xhr.response);
+        // 读取 XLSX 文件内容
+        var workbook = XLSX.read(data, { type: "array" });
+        // 获取工作簿中的第一个工作表
+        var firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+        // 将工作表转换为 JSON 格式
+        var data = XLSX.utils.sheet_to_json(firstSheet);
+        // 在控制台输出 JSON 数据
+        console.log(data);
+        var a=document.getElementById("add")
+        var tr = document.createElement('tr');
+            a.appendChild(tr); //创建行
+        for(i=0;i<data.length;i++)
+        {
+          // document.getElementById("add").innerHTML='<table border="0"><tr><td><img src="'+data[i].image+'" alt=""></td></tr></table>'
+          // console.log(data[i].image)
+          var tr = document.createElement('tr');
+            a.appendChild(tr); //创建行
+          var td = document.createElement('td');
+              td.innerHTML = '<img src="'+data[i].image+'" alt="">';
+              tr.appendChild(td); //创建列
+        }
+        };
+        // 发送请求
+        xhr.send();
+
+    </script>
+    <!-- <script src="../js/xlsx.js">
+      console.log(1)
+      console.log(ChXlsx.xlsxName("../xlsx/images.xlsx"))
+    </script> -->
+  </body>
+</html>
